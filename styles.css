@@ -6,7 +6,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #ffe77aff;
-    ;
     height: 100vh;
     overflow: hidden;
     color: #008000;
@@ -103,15 +102,15 @@ section p {
     font-size: 1.5rem;
 }
 
-/*.quiz-container{
-    background-color: black;
+.quiz-container{
+    background-color: #2c5f2dff;
     border-radius: 10px;
     width: 350px;
     overflow: hidden;
     padding-top: 1%;
     text-align: left;
     justify-content: center;
-}*/
+}
 
 .quiz-header {
     padding: 0.5rem;
@@ -122,13 +121,13 @@ h2 {
     padding: 1rem;
     text-align: center;
     margin: 0;
-    color: #2c5f2dff;
+    color: #ffffff;
 }
 
 ul {
     list-style-type: none;
     padding: 0%;
-    color: #2c5f2dff;
+    color: #ffffff;
     text-align: left;
 }
 
