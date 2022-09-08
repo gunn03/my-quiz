@@ -68,7 +68,7 @@ main {
 }
 
 .nav-link {
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .dropdown-menu {
