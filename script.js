@@ -82,11 +82,19 @@ const getSelected = () => {
 
 submitBtn.addEventListener('click', () => {
     const answer = getSelected()
+    let messageContainer = document.getElementById('messageContainer')
     if (answer) {
         if (answer === quizData[currentQuiz].correct) {
             score++
+            messageContainer.innerHTML = 'Correct'
+            messageContainer.style.backgroundColor = 'green'
+        } else {
+            messageContainer.innerHTML = 'Incorrect'
+            messageContainer.style.backgroundColor = 'red'
         }
 
+       
+        
         currentQuiz++
 
         if (currentQuiz < quizData.length) {
@@ -98,13 +106,25 @@ submitBtn.addEventListener('click', () => {
            <button onclick="location.reload()">Reload</button>
            `
         }
+    } else {
+        messageContainer.innerHTML = 'Please select a answer'
     }
+    setTimeout(() => {
+        messageContainer.innerHTML = ''
+        messageContainer.style.backgroundColor = 'transparent'
+
+
+    }, 1000)
 })
 loadQuiz()
 
-function checker() {
-    let result = confirm('Are you sure?');
-    if (result == false) {
-        Event.preventDefault();
-    }
-}
+let checkerButtons = document.querySelectorAll('.checker-button')
+console.log(checkerButtons)
+checkerButtons.forEach((c) => {
+    c.addEventListener('click', (e) => {
+        let result = confirm('Are you sure?');
+        if (result == false) {
+            e.preventDefault();
+        }   
+    })
+})
