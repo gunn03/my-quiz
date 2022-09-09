@@ -33,7 +33,7 @@
  <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
-        <strong><a onclick="checker()" class="nav-link" href="index.html">Home</a></strong>
+        <strong><a class="nav-link checker-button" href="index.html">Home</a></strong>
       </li>
       <li class="nav-item dropdown">
       <strong><a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">How to Play</a>
@@ -44,7 +44,7 @@
  </div>
       </li></strong>
       <li class="nav-item">
-       <a onclick="checker()" class="nav-link" href="quiz.html">restart quiz</a>
+       <a class="nav-link checker-button" href="quiz.html">restart quiz</a>
       </li>    
     </ul>
   </div>
@@ -54,6 +54,7 @@
   <div class="quiz-container" id="quiz">
   <div class="quiz-header">
     <h2 id="question">Question Text</h2>
+    
     <ul>
       <li>
       <input type="radio" name="answer" id="a" class="answer" />
@@ -73,6 +74,7 @@
       </li>
       </ul>  
       <button id="submit">Submit</button>
+      <div id="messageContainer"></div>
   </div>  
   </div>
   </div>
