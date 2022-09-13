@@ -43,12 +43,6 @@ main {
     padding-left: 0;
 }
 
-#navButton{
-    background-color: #008000;
-    border: none;
-    text-align: left;
-}
-
 .navbar ul {
     display: flex;
     list-style: none;
@@ -80,10 +74,11 @@ main {
 .dropdown-menu {
     text-align: center;
     left: 5%;
-    transform: translateX(-10%);
+    transform: translateX(-5%);
     top: 100%;
     background-color: #008000;
     color: #ffffff;
+    border: none;
 }
 
 
@@ -100,12 +95,13 @@ section {
 section h1,
 h2 {
     color: #000000;
-    font-size: 1.5rem;
+    font-size: 1.2rem ;
     text-align: left;
+    text-decoration: solid;
 }
 
 section p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .quiz-container{
@@ -133,7 +129,7 @@ section p {
 }
 
 h2 {
-    padding: 1rem;
+    padding: 1%;
     text-align: center;
     margin: 0;
     color: #ffffff;
@@ -154,6 +150,7 @@ ul li {
 ul li label {
     cursor: pointer;
 }
+
 
 button:hover {
     background-color: #0fd026;
