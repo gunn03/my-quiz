@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"crossorigin="anonymous"/>
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -19,68 +19,66 @@
     <title>My Quiz</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark">
- <div class="container-fluid">
-  <button type="button"
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <button type="button"
          class="navbar-toggler" 
          data-bs-toggle="collapse" 
          data-bs-target="#collapsibleNavbar"
-         aria-controls="navbarSupportedContent"
          aria-expanded="false"
          aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
- <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-        <strong><a class="nav-link checker-button" href="index.html">Home</a></strong>
-      </li>
-      <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><strong>How to Play</strong></a>
- <div class="dropdown-menu">
-      <p>1.Answer the question choosing one of the four answers provided.</p>
-      <p>2.Once you have chosen your answer click submit and it will take you to the next question.</p>
-      <p>3.When you have answered the final question and clicked submit you will get you score and the option to reload the quiz.</p>
- </div>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link checker-button" href="quiz.html"><strong>restart quiz</strong></a>
-      </li>    
-    </ul>
-  </div>
-  </div>  
-</nav>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+          <strong><a class="nav-link checker-button" href="index.html">Home</a></strong>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><strong>How to Play</strong></a>
+            <div class="dropdown-menu">
+              <p>1.Answer the question choosing one of the four answers provided.</p>
+              <p>2.Once you have chosen your answer click submit and it will take you to the next question.</p>
+              <p>3.When you have answered the final question and clicked submit you will get you score and the option to reload the quiz.</p>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link checker-button" href="quiz.html"><strong>restart quiz</strong></a>
+          </li>    
+        </ul>
+      </div>
+    </div>  
+  </nav>
   <section class="quiz-class">
-<div class="quiz-container" id="quiz">
-  <div class="quiz-header">
-    <h2 id="question">Question Text</h2>
-    <ul>
-      <li>
-      <input type="radio" name="answer" id="a" class="answer" />
-      <label for="a" id="a_text">Answer</label>
-      </li>
-      <li>
-      <input type="radio" name="answer" id="b" class="answer" />
-      <label for="b" id="b_text">Answer</label>
-      </li>
-       <li>
-      <input type="radio" name="answer" id="c" class="answer" />
-      <label for="c" id="c_text">Answer</label>
-      </li>
-      <li>
-      <input type="radio" name="answer" id="d" class="answer" />
-      <label for="d" id="d_text">Answer</label>
-      </li>
-      </ul>  
-      <button id="submit">Submit</button>
-      <div id="messageContainer"></div>
-  </div>  
-  </div>
-  </div>
+    <div class="quiz-container" id="quiz">
+      <div class="quiz-header">
+        <h2 id="question">Question Text</h2>
+        <ul>
+          <li>
+            <input type="radio" name="answer" id="a" class="answer" />
+            <label for="a" id="a_text">Answer</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="b" class="answer" />
+            <label for="b" id="b_text">Answer</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="c" class="answer" />
+            <label for="c" id="c_text">Answer</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="d" class="answer" />
+            <label for="d" id="d_text">Answer</label>
+          </li>
+        </ul>  
+          <button id="submit">Submit</button>
+          <div id="messageContainer"></div>
+      </div>  
+    </div>
   </section>  
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.(js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.m(in.j)s"></script>
-      <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.(js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.m(in.j)s"></script>
+    <script src="script.js"></script>
   <footer><Strong>&copy;2022</Strong></footer>
 </body>
 </html>
